@@ -27,7 +27,7 @@ analyzeBtn.addEventListener("click", async () => {
     showResult("AI가 분석 중입니다. 잠시만 기다려주세요...");
 
     try {
-        const response = await fetch("http://127.0.0.1:5000/api/analyze", {
+        const response = await fetch("/api/analyze", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
